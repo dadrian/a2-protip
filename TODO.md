@@ -1,0 +1,5 @@
+- Pretty up the CSS
+- View a list of tips
+- Categorize tips (Welcome Week Edition, Midterm Edition, etc.)
+- View tips in a category
+- Be able to add a tip without having to redeploy the website
