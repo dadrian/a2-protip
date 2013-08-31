@@ -8,6 +8,7 @@ var express = require('express'),
     CONFIG = require('config'),
     markdown = require('markdown').markdown,
     fs = require('fs'),
+    crypto = require('crypto'),
     path = require('path');
 
 var app = express();
@@ -41,9 +42,10 @@ tip_files.forEach(function(file) {
 });
 
 app.get('/', function(req, res) {
+    var index = crypto.pseudoRandomBytes(1)[0] % markdown_tips.length
     context = {
         title: 'Ann Arbor Protips',
-        tip: markdown_tips[0]
+        tip: markdown_tips[index]
     }
     res.render('index.jade', context);
 });
