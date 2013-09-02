@@ -3,7 +3,9 @@ extends layout
 block content
   .container
     .row
-      h1= title
-      p Welcome to #{title}
+      .col-md-8.col-md-offset-2
+        h1= title
+        p Welcome to #{title}
     .row
-      include tip
+      .col-md-8.col-md-offset-2
+        include tip
