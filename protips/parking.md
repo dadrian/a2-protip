@@ -1,5 +1,4 @@
-Protip: Special Welcome Week Edition
-------------------------------------
+### Protip: Special Welcome Week Edition
 
 Activating your hazard lights and parking in any of the following locations
 is not made legal by the fact that you have your hazard lights on:
