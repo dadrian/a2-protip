@@ -44,7 +44,7 @@ tip_files.forEach(function(file) {
 app.get('/', function(req, res) {
     var index = crypto.pseudoRandomBytes(1)[0] % markdown_tips.length
     context = {
-        title: 'Just the Tip',
+        title: 'Ann Arbor Protips',
         tip: markdown_tips[index]
     }
     res.render('index.jade', context);
